@@ -17,4 +17,4 @@ x_data = data_all.drop(['target'], axis = 1)
 X = (x_data - np.min(x_data)) / (np.max(x_data) - np.min(x_data)).values
 
 # Train-test split: assess model using test partition, data the model hasn't seen
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.75, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
